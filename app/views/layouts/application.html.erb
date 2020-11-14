@@ -8,14 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="banner"  style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0))">
-    <h1> <%= link_to " Crazy Cocktails", cocktails_path %> </h1>
-  </div>
-  <div>
-    <%= yield %>
-  </div>
+    <p class="italic" style="position: absolute; font-family: 'Amatic SC', cursive;">Karolina's</p>
+    <h1 class="banner-h1" style=" position: absolute; font-family: 'Amatic SC', cursive;"> <%= link_to "    Crazy Cocktails", cocktails_path %> </h1>
+    </div>
+    <div>
+      <%= yield %>
+    </div>
   </body>
 </html>
