@@ -5,14 +5,11 @@
   </div>
   <div class="cards">
     <% @cocktails.each do |cocktail|%>
-     <div class="card-category" style="background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.amexessentials.com/wp-content/uploads/2019/05/opener-mixing-cocktails-.jpg)">
-     <%= link_to "#{cocktail.name}", "/cocktails/#{cocktail.id}" %>
-
-
-  </div>
-  
-     <% end %>
+      <% if cocktail.photo.attached?%>
+     <div class="card-category" style="background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')"><%= link_to "#{cocktail.name}", "/cocktails/#{cocktail.id}" %>
+      <% else %>
+      <div class="card-category" style="background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><%= link_to "#{cocktail.name}", "/cocktails/#{cocktail.id}" %>
+      <% end %>
   
 </div>
-
-
+<% end %>
