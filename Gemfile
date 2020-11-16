@@ -28,7 +28,7 @@ gem 'cloudinary', '~> 1.16.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'simple_form'
-
+gem 'font-awesome-sass', '~> 5.12.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,7 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'autoprefixer-rails'
-  gem 'font-awesome-sass', '~> 5.12.0'
+  
   gem 'dotenv-rails', groups: [:development, :test]
 end
 
