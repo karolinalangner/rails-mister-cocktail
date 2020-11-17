@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 
   </head>
 
-  <body  style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0)), url(<%= image_pack_tag("bubbles.png") %>)">
+   <body  style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0)), url(<%= image_tag('bubbles.png') %>)">
     
     <div class="banner">
     <p class="italic" style="position: absolute; font-family: 'Amatic SC', cursive;">Karolina's</p>
@@ -31,7 +31,7 @@
       <li><a href="https://instagram.com/karina__lange"><i class="fab fa-instagram"></i></a></li>
       <li><a href="https://github.com/karolinalangner"><i class="fab fa-github"></i></a></li>
     </ul>
-     <p>Created by Karolina Langner</p><i class="fab fa-angellist"></i>
+     <p>Created by Karolina Langner @ Le Wagon <i class="fab fa-angellist"></i></p>
   </div>
   </body>
 </html>
