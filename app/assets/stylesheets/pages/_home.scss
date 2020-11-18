@@ -1,14 +1,18 @@
 // Specific CSS for your home-page
 
 a {
-    color: #CBCBCB;
+    color: rgba(239, 240, 185, 0.856);
+    font-family: 'Amatic SC', cursive;
   }
   
   a:hover {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
   }
   
   button a {
     color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
   }
