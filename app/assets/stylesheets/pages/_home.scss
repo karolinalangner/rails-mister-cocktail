@@ -1,5 +1,7 @@
 // Specific CSS for your home-page
-
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0)), url('bubbles.png');
+}
 a {
     color: rgba(239, 240, 185, 0.856);
     font-family: 'Amatic SC', cursive;
